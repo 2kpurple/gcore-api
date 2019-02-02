@@ -8,11 +8,13 @@ API从客户端中扒出来的。
 
 
 
+***以下没有特殊说明的均为GET***
+
 ## 分类
 
 ### 分类列表
 
-**api/categories**
+ **api/categories**
 
 ```json
 {
