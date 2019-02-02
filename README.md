@@ -231,6 +231,42 @@ API从客户端中扒出来的。
 
 
 
+## 账号
+
+### 登录
+
+POST **auth/identity/callback**
+
+| 参数       | 说明             |
+| ---------- | ---------------- |
+| auth_key   | 用户名/手机号 等 |
+| password   | 密码             |
+| sourceType | 取值为'app'      |
+
+
+
+```json
+{
+    "status": 1,
+    "results": {
+        "auth_token": "XXXXXXXXXXXXXXXXX",
+        "user": {
+            "id": 287123,
+            "nickname": "XXXXXX",
+            "thumb_url": "https://alioss.gcores.com/default_thumb/user-normal.png",
+            "location": "",
+            "is_fresh": false,
+            "providers": [
+                "identity"
+            ],
+            "is_staff": false
+        }
+    }
+}
+```
+
+
+
 ## 其他
 
 ### 首页走马灯
